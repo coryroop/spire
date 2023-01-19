@@ -1,0 +1,137 @@
+{
+    "Actor": {
+        "types": ["character"],
+        "character": {
+            "class": "",
+            "durance": "",
+            "skills": {
+                "compel": {
+                    "label": "SPIRE.Compel",
+                    "value": false
+                },
+                "deceive": {
+                    "label": "SPIRE.Deceive",
+                    "value": false
+                },
+                "fight": {
+                    "label": "SPIRE.Fight",
+                    "value": false
+                },
+                "fix": {
+                    "label": "SPIRE.Fix",
+                    "value": false
+                },
+                "investigate": {
+                    "label": "SPIRE.Investigate",
+                    "value": false
+                },
+                "pursue": {
+                    "label": "SPIRE.Pursue",
+                    "value": false
+                },
+                "resist": {
+                    "label": "SPIRE.Resist",
+                    "value": false
+                },
+                "sneak": {
+                    "label": "SPIRE.Sneak",
+                    "value": false
+                },
+                "steal": {
+                    "label": "SPIRE.Steal",
+                    "value": false
+                }
+            },
+            "domains": {
+                "academia": {
+                    "label": "SPIRE.Academia",
+                    "value": false
+                },
+                "crime": {
+                    "label": "SPIRE.Crime",
+                    "value": false
+                },
+                "commerce": {
+                    "label": "SPIRE.Commerce",
+                    "value": false
+                },
+                "highSociety": {
+                    "label": "SPIRE.HighSociety",
+                    "value": false
+                },
+                "lowSociety": {
+                    "label": "SPIRE.LowSociety",
+                    "value": false
+                },
+                "occult": {
+                    "label": "SPIRE.Occult",
+                    "value": false
+                },
+                "order": {
+                    "label": "SPIRE.Order",
+                    "value": false
+                },
+                "religion": {
+                    "label": "SPIRE.Religion",
+                    "value": false
+                },
+                "technology": {
+                    "label": "SPIRE.Technology",
+                    "value": false
+                }
+            },
+            "resistances": {
+                "blood": {
+                    "label": "SPIRE.Blood",
+                    "value": 0
+                },
+                "mind": {
+                    "label": "SPIRE.Mind",
+                    "value": 0
+                },
+                "silver": {
+                    "label": "SPIRE.Silver",
+                    "value": 0
+                },
+                "shadow": {
+                    "label": "SPIRE.Shadow",
+                    "value": 0
+                },
+                "reputation": {
+                    "label": "SPIRE.Reputation",
+                    "value": 0
+                }
+            },
+            "knacks": "",
+            "equipment": "",
+            "refresh": "",
+            "abilities": "",
+            "bonds": "",
+            "fallout": ""
+        }
+    },
+    "Item": {
+        "types": ["ability", "bond", "equipment", "fallout", "knack", "refresh"],
+        "ability": {
+            "use": "",
+            "description": ""
+        },
+        "bond": {
+            "description": ""
+        },
+        "equipment": {
+            "tag1": "",
+            "tag2": "",
+            "tag3": "",
+            "tag4": "",
+            "tag5": ""
+        },
+        "fallout": {
+            "description": ""
+        },
+        "knack": {},
+        "refresh": {
+            "description": ""
+        }
+    }
+}

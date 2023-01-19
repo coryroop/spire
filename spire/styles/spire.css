@@ -1,0 +1,421 @@
+.spire.sheet.character {
+    min-height: 800px;
+    min-width: 600px;
+}
+
+/******************************************************************************
+ * Generic helpers.                                                           * 
+ ******************************************************************************/
+
+.spire-flexbox {
+    display: flex;
+}
+
+.spire-horizontal-gap {
+    width: 5px;
+}
+
+.spire-vertical-gap {
+    height: 5px;
+}
+
+/******************************************************************************
+ * General information.                                                       * 
+ ******************************************************************************/
+
+.spire-portrait {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+input.spire-general-information-input-name {
+    background: none;
+    border: 1px solid transparent;
+    font-family: "Modesto Condensed", "Palatino Linotype", serif;
+    font-size: 32px;
+    height: 40px;
+}
+
+input.spire-general-information-input-name:hover {
+    border: 1px solid #111;
+    box-shadow: 0 0 8px red;
+}
+
+.spire-general-information-label {
+    line-height: 26px;
+    margin-right: 5px;
+}
+
+input.spire-general-information-input {
+    width: 150px;
+}
+
+/******************************************************************************
+ * Skills, domains and resistances lists.                                     * 
+ ******************************************************************************/
+
+.spire-skill-list-title,
+.spire-domain-list-title,
+.spire-resistance-list-title {
+    color: #4b4a44;
+    font-family: "Modesto Condensed", "Palatino Linotype", serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    height: 20px;
+}
+
+.spire-skill-list,
+.spire-domain-list,
+.spire-resistance-list {
+    border: 2px groove #eeede0;
+    border-radius: 3px;
+    padding: 3px 0px 2px;
+}
+
+.spire-skill,
+.spire-domain,
+.spire-resistance {
+    display: flex;
+    padding: 3px;
+    height: 24px;
+}
+
+.spire-skill:nth-child(even),
+.spire-domain:nth-child(even),
+.spire-resistance:nth-child(even) {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.spire-skill-label,
+.spire-domain-label,
+.spire-resistance-label {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.spire-skill-checkbox input,
+.spire-domain-checkbox input {
+    cursor: pointer;
+    margin: 0px;
+    opacity: 0;
+    position: absolute;
+    height: 0px;
+    width: 0px;
+}
+
+.spire-skill-checkbox label,
+.spire-domain-checkbox label {
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0px !important;
+    height: 18px !important;
+    width: 16px !important;
+}
+
+.spire-skill-checkbox input + label .fa-circle,
+.spire-domain-checkbox input + label .fa-circle {
+    color: #b5b3a4;
+    display: initial;
+}
+
+.spire-skill-checkbox input + label .fa-check,
+.spire-domain-checkbox input + label .fa-check {
+    display: none;
+}
+
+.spire-skill-checkbox input:checked + label .fa-circle,
+.spire-domain-checkbox input:checked + label .fa-circle {
+    display: none;
+}
+
+.spire-skill-checkbox input:checked + label .fa-check,
+.spire-domain-checkbox input:checked + label .fa-check {
+    color: #4b4a44;
+    display: initial;
+}
+
+.spire-resistance input {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: right !important;
+    height: 100%;
+}
+
+/******************************************************************************
+ * Tables.                                                                    * 
+ ******************************************************************************/
+
+.spire-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.spire-table-title {
+    background: rgba(0, 0, 0, 0.05);
+    border: 2px groove #eeede0;
+    display: flex;
+    justify-content: space-between;
+    line-height: 24px;
+    padding: 0px 5px 0px 5px;
+    height: 28px;
+}
+
+.spire-table-title-label {
+    color: #4b4a44;
+    font-family: "Modesto Condensed", "Palatino Linotype", serif;
+    font-size: 16px;
+}
+
+.spire-item-create {
+    color: #7a7971;
+    font-size: 12px;
+}
+
+.spire-item-delete,
+.spire-item-edit {
+    color: #7a7971;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.spire-table-items {
+    overflow: auto;
+}
+
+.spire-table-item {
+    border-bottom: 1px solid #c9c7b8;
+    padding: 2px 5px 2px 5px;
+}
+
+.spire-table-item-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spire-table-item-title-label {
+    font-weight: bold;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 20px;
+}
+
+.spire-table-item-title-label:hover {
+    cursor: pointer;
+    text-shadow: 0 0 8px red;
+}
+
+.spire-table-item-title-controls {
+    line-height: 20px;
+    height: 20px;
+}
+
+.spire-tag {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid #999;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 16px;
+    padding: 0 3px;
+}
+
+/******************************************************************************
+ * Boxes.                                                                     * 
+ ******************************************************************************/
+
+.spire-box,
+.spire-box-invisible {
+    display: flex;
+    flex-direction: column;
+}
+
+.spire-box {
+    border: 1px solid black;
+}
+
+.spire-box-title,
+.spire-box-title-invisible {
+    display: flex;
+    flex-basis: 30px;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.spire-box-title {
+    border-bottom: 1px solid black;
+}
+
+.spire-box-items {
+    flex-basis: 100%;
+    overflow: auto;
+}
+
+.spire-box-item {
+    border-bottom: 1px solid #999;
+    box-shadow: 0 0 2px #fff inset;
+    padding: 4px;
+}
+
+.spire-box-item-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spire-box-skill,
+.spire-box-domain,
+.spire-box-resistance {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 4px 1px 4px;
+}
+
+.spire-tag-list {
+    line-break: anywhere;
+    height: 20px;
+}
+
+/******************************************************************************
+ * Grid.                                                                      * 
+ ******************************************************************************/
+
+.spire-grid {
+    display: grid;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-columns: 150px repeat(3, calc((100% - 165px) / 3));
+    grid-template-rows: repeat(10, calc(10% - 4.5px));
+    height: 649px;
+}
+
+.spire-skills-domains-resistances {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 11;
+}
+
+.spire-knacks {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.spire-equipment {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.spire-refresh {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.spire-abilities {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 11;
+}
+
+.spire-bonds {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 7;
+}
+
+.spire-fallout {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 11;
+}
+
+/******************************************************************************
+ * Special style for the action roll popup.                                   *
+ ******************************************************************************/
+
+.spire-roll-options input {
+    display: none;
+}
+
+.spire-roll-options label {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid #7a7971;
+    border-radius: 3px;
+    cursor: pointer;
+    flex: 1 !important;
+    height: 26px;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.spire-roll-options input[type="checkbox"] + label {
+    border-style: dashed;
+    opacity: 0.75;
+}
+
+.spire-roll-options input[type="radio"]:checked + label {
+    background: #822a15;
+    border-color: black;
+    border-style: solid;
+    color: #e9e7d8;
+}
+
+.spire-roll-options input[type="checkbox"]:checked + label {
+    background: rgb(47, 80, 132);
+    border-color: black;
+    border-style: solid;
+    color: #e9e7d8;
+    opacity: 1;
+}
+
+/******************************************************************************
+ * Special style for the roll message.                                        *
+ ******************************************************************************/
+
+.spire-roll-info-wrapper {
+    display: flex;
+    gap: 5px;
+}
+
+.spire-roll-info-inactive {
+    border: 1px dashed #7a7971;
+    border-radius: 3px;
+    opacity: 0.75;
+    padding: 3px;
+}
+
+.spire-roll-info-active {
+    background: rgb(47, 80, 132);
+    border: 1px solid black;
+    border-radius: 3px;
+    color: white;
+    padding: 3px;
+}
+
+.spire-roll-info-difficulty {
+    background: #822a15;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: white;
+    padding: 3px;
+}
+
+.spire-muted-die {
+    opacity: 0.3;
+}

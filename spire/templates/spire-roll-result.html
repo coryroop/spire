@@ -1,0 +1,41 @@
+<div class="dice-roll">
+    <div class="dice-result">
+        {{#if (eq roll_status "critical-success")}}
+        <h4 class="dice-total">{{localize "SPIRE.CriticalSuccess"}}</h4>
+        {{/if}} {{#if (eq roll_status "success")}}
+        <h4 class="dice-total">{{localize "SPIRE.Success"}}</h4>
+        {{/if}} {{#if (eq roll_status "partial-success")}}
+        <h4 class="dice-total">{{localize "SPIRE.PartialSuccess"}}</h4>
+        {{/if}} {{#if (eq roll_status "failure")}}
+        <h4 class="dice-total">{{localize "SPIRE.Failure"}}</h4>
+        {{/if}} {{#if (eq roll_status "critical-failure")}}
+        <h4 class="dice-total">{{localize "SPIRE.CriticalFailure"}}</h4>
+        {{/if}}
+    </div>
+</div>
+<div class="spire-vertical-gap"></div>
+<div class="spire-roll-info-wrapper">
+    {{#if skill}}
+    <div class="spire-roll-info-active">{{localize "SPIRE.Skill"}}</div>
+    {{else}}
+    <div class="spire-roll-info-inactive">{{localize "SPIRE.Skill"}}</div>
+    {{/if}} {{#if domain}}
+    <div class="spire-roll-info-active">{{localize "SPIRE.Domain"}}</div>
+    {{else}}
+    <div class="spire-roll-info-inactive">{{localize "SPIRE.Domain"}}</div>
+    {{/if}} {{#if mastery}}
+    <div class="spire-roll-info-active">{{localize "SPIRE.Mastery"}}</div>
+    {{else}}
+    <div class="spire-roll-info-inactive">{{localize "SPIRE.Mastery"}}</div>
+    {{/if}}
+    <div class="spire-roll-info-difficulty">{{localize "SPIRE.Difficulty"}} {{difficulty}}</div>
+</div>
+<div class="dice-tooltip">
+    <ol class="dice-rolls">
+        {{#each this.roll_results}} {{#if this.active}}
+        <li class="roll die d10">{{{this.result}}}</li>
+        {{else}}
+        <li class="roll die d10 spire-muted-die">{{{this.result}}}</li>
+        {{/if}} {{/each}}
+    </ol>
+</div>
