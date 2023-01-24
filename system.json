@@ -1,11 +1,11 @@
 {
-    "authors": ["Olivier Grech", "Cory Roop"],
+    "authors": ["Olivier Grech", "Some Other Guy"],
     "compatibility": {
         "minimum": 9,
         "verified": "10.288"
     },
     "description": "Spire",
-    "download": "https://github.com/coryroop/spire/archive/refs/heads/main.zip",
+    "download": "https://github.com/hoidforpresident/spire/archive/refs/heads/main.zip",
     "esmodules": ["module/spire.js"],
     "languages": [
         {
@@ -29,11 +29,11 @@
             "path": "lang/it.json"
         }
     ],
-    "manifest": "https://github.com/coryroop/spire/-/raw/master/system.json",
+    "manifest": "https://github.com/hoidforpresident/spire/-/raw/master/system.json",
     "id": "spire",
     "styles": ["styles/spire.css"],
     "templateVersion": 1,
     "title": "Spire",
-    "url": "https://github.com/coryroop/spire",
+    "url": "https://github.com/hoidforpresident/spire",
     "version": "1.5.1"
 }
