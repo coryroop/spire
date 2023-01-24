@@ -1,3 +1,13 @@
+## Foundry v10 Update
+This is my attempt at bringing the Spire system into compatibility with
+Foundry VTT v10. I'm no wizard when it comes to Javascript so I'm basically
+fumbling my way through via trial and error. I'll do my best not to break the
+system in the main branch. If I can resolve the compatibility errors, I'll work on
+implementing the features that the previous author had planned on.
+
+For now there are still compatibility warnings but the current modules seem
+to be backwards compatible for now until I can get them fixed.
+
 # Foundry Virtual Tabletop Spire System
 
 This is a package for [Foundry Virtual Tabletop](https://foundryvtt.com/)

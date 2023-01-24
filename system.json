@@ -1,7 +1,8 @@
 {
     "authors": ["Olivier Grech", "Cory Roop"],
     "compatibility": {
-        "minimum": 9
+        "minimum": 9,
+        "verified": "10.288"
     },
     "description": "Spire",
     "download": "https://github.com/coryroop/spire/archive/refs/heads/main.zip",
