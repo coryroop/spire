@@ -1,8 +1,10 @@
 {
     "authors": ["Olivier Grech", "Cory Roop"],
-    "compatibleCoreVersion": "10",
+    "compatibility": {
+        "minimum": 9
+    },
     "description": "Spire",
-    "download": "https://gitlab.com/olivier-grech/spire/-/archive/1.5.1/spire-1.5.1.zip",
+    "download": "https://github.com/coryroop/spire/archive/refs/heads/main.zip",
     "esmodules": ["module/spire.js"],
     "languages": [
         {
@@ -26,9 +28,8 @@
             "path": "lang/it.json"
         }
     ],
-    "manifest": "https://githu.com/coryroop/spire/-/raw/master/system.json",
-    "minimumCoreVersion": "10",
-    "name": "spire",
+    "manifest": "https://github.com/coryroop/spire/-/raw/master/system.json",
+    "id": "spire",
     "styles": ["styles/spire.css"],
     "templateVersion": 1,
     "title": "Spire",
